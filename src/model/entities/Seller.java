@@ -10,21 +10,21 @@ public class Seller {
 	private Date birthDate;
 	private double  baseSalary;
 	
-	private Seller departmet;
+	private Department department;
 	
 	public Seller() {
 		
 		
 	}
 
-	public Seller(int id, String name, String email, Date birthDate, double baseSalary, Seller departmet ) {
+	public Seller(int id, String name, String email, Date birthDate, double baseSalary, Department departmet ) {
 		
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.birthDate = birthDate;
 		this.baseSalary = baseSalary;
-		this.departmet= departmet;
+		this.department= department;
 	}
 
 	public int getId() {
@@ -65,6 +65,17 @@ public class Seller {
 
 	public void setBaseSalary(double baseSalary) {
 		this.baseSalary = baseSalary;
+	}
+	
+
+	
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 
 	@Override
