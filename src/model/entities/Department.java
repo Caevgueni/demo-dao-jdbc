@@ -14,9 +14,9 @@ public Department() {
 	
 }
 
-public Department(int id, String name) {
+public Department( String name) {
 	
-	this.id = id;
+   
 	this.name = name;
 }
 
